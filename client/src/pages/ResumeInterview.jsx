@@ -90,7 +90,7 @@ function ResumeInterview() {
       setSubmitting(true);
 
       const response = await fetch(
-        `http://localhost:5000/api/resume-interview/${interviewId}/answer`,
+        `http://https://ai-interview-platform-5e0s.onrender.com/api/resume-interview/${interviewId}/answer`,
         {
           method: "POST",
           headers: {

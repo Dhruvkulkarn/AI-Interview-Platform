@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/HRChatInterview.css";
 
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = "http://https://ai-interview-platform-5e0s.onrender.com";
 const TOTAL_QUESTIONS = 5;
 
 function HRChatInterview() {

@@ -36,7 +36,7 @@ function Dashboard() {
         const [analyticsResponse, interviewsResponse] =
           await Promise.all([
             fetch(
-              "http://localhost:5000/api/interviews/analytics",
+              "http://https://ai-interview-platform-5e0s.onrender.com/api/interviews/analytics",
               {
                 headers: {
                   Authorization: `Bearer ${token}`,
@@ -44,7 +44,7 @@ function Dashboard() {
               }
             ),
 
-            fetch("http://localhost:5000/api/interviews", {
+            fetch("http://https://ai-interview-platform-5e0s.onrender.com/api/interviews", {
               headers: {
                 Authorization: `Bearer ${token}`,
               },

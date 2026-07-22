@@ -26,7 +26,7 @@ function ResumeHistory() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/resume/history",
+        "http://https://ai-interview-platform-5e0s.onrender.com/api/resume/history",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -68,7 +68,7 @@ function ResumeHistory() {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        `http://localhost:5000/api/resume/history/${id}`,
+        `http://https://ai-interview-platform-5e0s.onrender.com/api/resume/history/${id}`,
         {
           method: "DELETE",
           headers: {
@@ -114,7 +114,7 @@ function ResumeHistory() {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        "http://localhost:5000/api/resume/history",
+        "http://https://ai-interview-platform-5e0s.onrender.com/api/resume/history",
         {
           method: "DELETE",
           headers: {

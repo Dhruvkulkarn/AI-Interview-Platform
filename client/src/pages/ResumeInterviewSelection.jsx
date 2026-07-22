@@ -53,7 +53,7 @@ function ResumeInterviewSelection() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/resume/history",
+        "http://https://ai-interview-platform-5e0s.onrender.com/api/resume/history",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -162,7 +162,7 @@ function ResumeInterviewSelection() {
       setStarting(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/resume-interview/start",
+        "http://https://ai-interview-platform-5e0s.onrender.com/api/resume-interview/start",
         {
           method: "POST",
           headers: {

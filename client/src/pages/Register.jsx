@@ -42,7 +42,7 @@ function Register() {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/auth/register",
+        "http://https://ai-interview-platform-5e0s.onrender.com/api/auth/register",
         {
           method: "POST",
           headers: {
