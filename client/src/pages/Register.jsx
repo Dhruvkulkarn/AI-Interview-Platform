@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { API_URL } from "../config/api";
 import "../styles/Register.css";
 
 function Register() {
@@ -42,7 +43,7 @@ function Register() {
       setLoading(true);
 
       const response = await fetch(
-        "http://https://ai-interview-platform-5e0s.onrender.com/api/auth/register",
+        `${API_URL}/api/auth/register`,
         {
           method: "POST",
           headers: {
