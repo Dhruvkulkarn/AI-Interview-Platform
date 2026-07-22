@@ -44,7 +44,7 @@ function Analytics() {
         }
 
         const response = await fetch(
-          "http://https://ai-interview-platform-5e0s.onrender.com/api/interviews/analytics",
+          "https://ai-interview-platform-5e0s.onrender.com/api/interviews/analytics",
           {
             method: "GET",
             headers: {

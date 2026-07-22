@@ -22,7 +22,7 @@ function Interview() {
         setError("");
 
         const response = await fetch(
-          `http://https://ai-interview-platform-5e0s.onrender.com/api/questions/${role}`
+          `https://ai-interview-platform-5e0s.onrender.com/api/questions/${role}`
         );
 
         const data = await response.json();
@@ -87,7 +87,7 @@ function Interview() {
 
       for (let index = 0; index < questions.length; index++) {
         const response = await fetch(
-          "http://https://ai-interview-platform-5e0s.onrender.com/api/evaluate-answer",
+          "https://ai-interview-platform-5e0s.onrender.com/api/evaluate-answer",
           {
             method: "POST",
             headers: {
@@ -150,7 +150,7 @@ if (!token) {
 
 // Save the completed interview to MongoDB
 const saveResponse = await fetch(
-  "http://https://ai-interview-platform-5e0s.onrender.com/api/interviews",
+  "https://ai-interview-platform-5e0s.onrender.com/api/interviews",
   {
     method: "POST",
     headers: {

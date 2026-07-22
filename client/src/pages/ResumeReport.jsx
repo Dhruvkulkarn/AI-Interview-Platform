@@ -29,7 +29,7 @@ function ResumeReport() {
       }
 
       const response = await fetch(
-        `http://https://ai-interview-platform-5e0s.onrender.com/api/resume/history/${id}`,
+        `https://ai-interview-platform-5e0s.onrender.com/api/resume/history/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

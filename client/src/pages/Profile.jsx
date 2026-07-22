@@ -37,7 +37,7 @@ function Profile() {
         }
 
         const response = await fetch(
-          "http://https://ai-interview-platform-5e0s.onrender.com/api/auth/profile",
+          "https://ai-interview-platform-5e0s.onrender.com/api/auth/profile",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -132,7 +132,7 @@ function Profile() {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        "http://https://ai-interview-platform-5e0s.onrender.com/api/auth/profile",
+        "https://ai-interview-platform-5e0s.onrender.com/api/auth/profile",
         {
           method: "PUT",
           headers: {

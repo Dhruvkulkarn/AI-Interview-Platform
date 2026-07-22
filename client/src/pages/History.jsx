@@ -28,7 +28,7 @@ function History() {
         }
 
         const response = await fetch(
-          "http://https://ai-interview-platform-5e0s.onrender.com/api/interviews",
+          "https://ai-interview-platform-5e0s.onrender.com/api/interviews",
           {
             method: "GET",
             headers: {
@@ -83,7 +83,7 @@ function History() {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        `http://https://ai-interview-platform-5e0s.onrender.com/api/interviews/${id}`,
+        `https://ai-interview-platform-5e0s.onrender.com/api/interviews/${id}`,
         {
           method: "DELETE",
           headers: {
@@ -135,7 +135,7 @@ function History() {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        "http://https://ai-interview-platform-5e0s.onrender.com/api/interviews",
+        "https://ai-interview-platform-5e0s.onrender.com/api/interviews",
         {
           method: "DELETE",
           headers: {

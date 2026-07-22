@@ -115,7 +115,7 @@ if (!token) {
 }
 
 const response = await fetch(
-  "http://https://ai-interview-platform-5e0s.onrender.com/api/resume/analyze",
+  "https://ai-interview-platform-5e0s.onrender.com/api/resume/analyze",
   {
     method: "POST",
 
