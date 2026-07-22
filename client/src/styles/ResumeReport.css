@@ -1,0 +1,367 @@
+.resume-report-page {
+  min-height: 100vh;
+  padding: 40px 20px 70px;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(37, 99, 235, 0.14),
+      transparent 35%
+    ),
+    #0f172a;
+  color: #e2e8f0;
+}
+
+.resume-report-container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.resume-report-topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 24px;
+}
+
+.resume-report-back-button,
+.resume-report-new-button,
+.resume-report-error-card button {
+  padding: 11px 17px;
+  border-radius: 10px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.resume-report-back-button {
+  border: 1px solid #475569;
+  background: rgba(30, 41, 59, 0.7);
+  color: #cbd5e1;
+}
+
+.resume-report-new-button,
+.resume-report-error-card button {
+  border: none;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: #ffffff;
+}
+
+.resume-report-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 24px;
+  padding: 28px;
+  border: 1px solid rgba(148, 163, 184, 0.17);
+  border-radius: 20px;
+  background: rgba(15, 23, 42, 0.82);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
+}
+
+.resume-report-file-heading {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 17px;
+}
+
+.resume-report-file-icon {
+  font-size: 45px;
+}
+
+.resume-report-label {
+  margin: 0 0 6px;
+  color: #60a5fa;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.resume-report-header h1 {
+  overflow-wrap: anywhere;
+  margin: 0 0 7px;
+  color: #f8fafc;
+  font-size: clamp(25px, 4vw, 38px);
+}
+
+.resume-report-header p:last-child {
+  margin: 0;
+  color: #94a3b8;
+}
+
+.resume-report-reviewed-badge {
+  padding: 9px 13px;
+  border-radius: 999px;
+  background: rgba(34, 197, 94, 0.14);
+  color: #86efac;
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.resume-report-score-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.resume-report-score-card {
+  padding: 23px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 17px;
+  background: rgba(30, 41, 59, 0.72);
+}
+
+.ats-score-card {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(37, 99, 235, 0.2),
+      rgba(124, 58, 237, 0.15)
+    ),
+    rgba(30, 41, 59, 0.75);
+}
+
+.resume-report-score-card p {
+  margin: 0 0 9px;
+  color: #94a3b8;
+  font-weight: 700;
+}
+
+.resume-report-score-card h2 {
+  margin: 0 0 10px;
+  color: #f8fafc;
+  font-size: 34px;
+}
+
+.resume-report-score-card span {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.resume-report-progress {
+  height: 9px;
+  margin: 13px 0 11px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #334155;
+}
+
+.resume-report-progress-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #22c55e, #60a5fa);
+}
+
+.resume-report-summary-card,
+.resume-report-content-card {
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 17px;
+  background: rgba(30, 41, 59, 0.65);
+}
+
+.resume-report-summary-card {
+  margin-bottom: 20px;
+  padding: 25px;
+}
+
+.resume-report-summary-card > p {
+  margin: 15px 0 0;
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+.resume-report-card-title {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.resume-report-card-title span {
+  font-size: 23px;
+}
+
+.resume-report-card-title h2 {
+  margin: 0;
+  color: #f8fafc;
+  font-size: 19px;
+}
+
+.resume-report-content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.resume-report-content-card {
+  padding: 23px;
+}
+
+.resume-report-list {
+  margin: 17px 0 0;
+  padding-left: 21px;
+  color: #cbd5e1;
+}
+
+.resume-report-list li {
+  margin-bottom: 11px;
+  line-height: 1.6;
+}
+
+.resume-report-empty-text {
+  margin: 16px 0 0;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.strengths-report-card {
+  border-top: 3px solid #22c55e;
+}
+
+.weaknesses-report-card {
+  border-top: 3px solid #f59e0b;
+}
+
+.skills-report-card {
+  border-top: 3px solid #38bdf8;
+}
+
+.suggestions-report-card {
+  border-top: 3px solid #a78bfa;
+}
+
+.roles-report-card {
+  border-top: 3px solid #f472b6;
+}
+
+.keywords-report-card {
+  border-top: 3px solid #facc15;
+}
+
+.resume-report-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.resume-report-keywords span {
+  padding: 8px 12px;
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.12);
+  color: #bfdbfe;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.resume-report-loading,
+.resume-report-error-card {
+  width: min(620px, 100%);
+  margin: 90px auto 0;
+  padding: 45px 25px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 20px;
+  background: rgba(15, 23, 42, 0.82);
+  text-align: center;
+}
+
+.resume-report-spinner {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 18px;
+  border: 5px solid #334155;
+  border-top-color: #60a5fa;
+  border-radius: 50%;
+  animation: resume-report-spin 0.8s linear infinite;
+}
+
+@keyframes resume-report-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.resume-report-loading h2,
+.resume-report-error-card h2 {
+  margin: 0 0 10px;
+  color: #f8fafc;
+}
+
+.resume-report-loading p,
+.resume-report-error-card p {
+  margin: 0;
+  color: #94a3b8;
+}
+
+.resume-report-error-icon {
+  margin-bottom: 13px;
+  font-size: 50px;
+}
+
+.resume-report-error-card button {
+  margin-top: 22px;
+}
+
+@media (max-width: 850px) {
+  .resume-report-score-grid,
+  .resume-report-content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .resume-report-page {
+    padding: 25px 13px 50px;
+  }
+
+  .resume-report-topbar,
+  .resume-report-header {
+    flex-direction: column;
+  }
+
+  .resume-report-topbar button {
+    width: 100%;
+  }
+
+  .resume-report-header {
+    padding: 20px;
+  }
+
+  .resume-report-file-heading {
+    align-items: flex-start;
+  }
+
+  .resume-report-reviewed-badge {
+    align-self: flex-start;
+  }
+}
+.resume-report-score-card,
+.resume-report-content-card,
+.resume-report-summary-card {
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.resume-report-score-card:hover,
+.resume-report-content-card:hover,
+.resume-report-summary-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(96, 165, 250, 0.32);
+  box-shadow: 0 15px 32px rgba(0, 0, 0, 0.2);
+}
+
+.resume-report-topbar button {
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.resume-report-topbar button:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
