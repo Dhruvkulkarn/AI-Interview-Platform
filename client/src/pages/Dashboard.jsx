@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { API_URL } from "../config/api";
 import "../styles/Dashboard.css";
 
 function Dashboard() {
@@ -34,22 +35,19 @@ function Dashboard() {
         }
 
         const [analyticsResponse, interviewsResponse] =
-          await Promise.all([
-            fetch(
-              "http://https://ai-interview-platform-5e0s.onrender.com/api/interviews/analytics",
-              {
-                headers: {
-                  Authorization: `Bearer ${token}`,
-                },
-              }
-            ),
+  await Promise.all([
+    fetch(`${API_URL}/api/interviews/analytics`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    }),
 
-            fetch("http://https://ai-interview-platform-5e0s.onrender.com/api/interviews", {
-              headers: {
-                Authorization: `Bearer ${token}`,
-              },
-            }),
-          ]);
+    fetch(`${API_URL}/api/interviews`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    }),
+  ]);
 
         if (
           analyticsResponse.status === 401 ||
